@@ -26,3 +26,5 @@ db.series.insertMany([
         "Classificação": "16+"
     }
 ])
+
+db.series.updateMany({"Série":{$in:["Homecoming", "Fleabag"]}},{$set: {"Classificação": "18+"}})
